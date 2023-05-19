@@ -15,12 +15,12 @@ Users should be able to:
 
 ### Screenshot
 
-
+![desktop-design](https://github.com/gauyash/ip-address-tracker/assets/96402498/088deb63-ff56-4195-a85e-e6f03654f621)
 
 
 ### Links
 
-- Live Site URL:
+- Live Site URL: https://gauyash.github.io/ip-address-tracker/
 
 
 ### Built with
@@ -36,7 +36,7 @@ Users should be able to:
 
 To run this application locally, follow these steps:
 
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone https://github.com/gauyash/ip-address-tracker.git`
 2. Navigate to the project directory: `cd ip-address-tracker`
 3. Open the `index.html` file in a web browser.
 
