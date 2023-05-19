@@ -15,12 +15,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+
 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL:
 
 
 ### Built with
