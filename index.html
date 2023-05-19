@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__row">
+        <div class="container__col col--bg row fd-col">
+          <h1 class="text-large fw-500 clr--white ta-center hero__text">
+            IP Address Tracker
+          </h1>
+          <form action="#">
+            <div class="search row">
+              <input
+                type="text"
+                required
+                id="search__input"
+                class="clr--very-dark-gray"
+                placeholder="Search for any IP address or domain"
+              />
+              <button class="search__btn row flex-center bg--very-dark-gray">
+                <img src="images/icon-arrow.svg" alt="" class="search__icon" />
+              </button>
+            </div>
+          </form>
+
+          <article class="details row fd-col bg--white flex-center">
+            <div class="details__col address">
+              <p class="text-mid ta-center clr--dark-gray fw-700 tt-upper">
+                IP ADDRESS
+              </p>
+              <h2 class="text-large ta-center fw-500 address__text">
+                <!-- 192.212.174.101 -->
+              </h2>
+            </div>
+
+            <div class="details__col location">
+              <p class="text-mid ta-center clr--dark-gray fw-700 tt-upper">
+                Location
+              </p>
+              <h2 class="text-large ta-center fw-500 location__text">
+                <!-- Berlin, Germany 10001 -->
+              </h2>
+            </div>
+            <div class="details__col timezone">
+              <p class="text-mid ta-center clr--dark-gray fw-700 tt-upper">
+                timezone
+              </p>
+              <h2 class="text-large ta-center fw-500 timezone__text">
+                <!-- UTC -05:00 -->
+              </h2>
+            </div>
+            <div class="isp details__col">
+              <p class="text-mid ta-center clr--dark-gray fw-700 tt-upper">
+                ISP
+              </p>
+              <h2 class="text-large ta-center fw-500 isp__text">
+                <!-- SpaceX Starlink -->
+              </h2>
+            </div>
+          </article>
+        </div>
+
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+  overflow-x: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* Utility Classes */
+
+
+.text-large{
+    font-size: 2.2rem;
+}
+
+.text-mid{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-500{
+    font-weight: 500;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+.clr--dark-gray{
+    color:  hsl(0, 0%, 59%);
+}
+
+.bg--dark-gray{
+    background-color:  hsl(0, 0%, 59%);
+}
+
+.clr--very-dark-gray{
+    color:  hsl(0, 0%, 17%);
+}
+
+.bg--very-dark-gray{
+    background-color:  hsl(0, 0%, 17%);
+}
+
+.clr--white{
+    color: rgba(255, 255, 255, 0.97);
+}
+
+.bg--white{
+    background-color: rgba(255, 255, 255, 0.97);
+}
+
+
+.tt-upper{
+    text-transform: uppercase;
+}
+
+.ta-center{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+}
+
+.fd-col{
+    flex-direction: column;
+}
+
+.fd-row{
+    flex-direction: row;
+}
+
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+
+
+.col--bg{
+    background-image: url(../images/pattern-bg-mobile.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 45vh;
+    background-size: cover;
+    gap: 2rem;
+
+}
+
+@media(min-width:768px){
+    .col--bg{
+        background-image: url(../images/pattern-bg-desktop.png);
+        height: 30vh;
+    }
+}
+
+/* .col--bg-desktop{
+} */
+
+.hero__text{
+    margin-top: 2rem;
+}
+
+.search{
+    width: 90%;
+    margin-inline: auto;
+    /* overflow: hidden; */
+    max-width: 500px;
+
+}
+
+#search__input{
+    width: 90%;
+    height: 5.5rem;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 0 1.5rem;
+}
+
+
+#search__inputs::-webkit-input-placeholder{
+    color:  hsl(0, 0%, 59%);
+}
+
+
+.search__btn{
+    width: 15%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    outline: none;
+    transition: opacity .3s ease-in-out;
+}
+
+
+.search__btn:hover{
+    opacity: 0.9;
+}
+
+
+
+.details{
+    gap: 1.5rem;
+    z-index: 2;
+    border-radius: 10px;
+    width: 90%;
+    margin-inline:auto;
+    padding: 4rem ;
+    max-width: 1200px;
+}
+
+
+
+@media(min-width:768px){
+    .details{
+        flex-direction: row;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: stretch;
+    }
+
+    .details__col{
+        border-right: 1px solid  hsl(0, 0%, 59%);
+        width: 100%;
+        padding-right: 3rem ;
+
+    }
+
+    .details__col:nth-child(4){
+        border-right: none;
+    }
+
+    .details__col > * {
+        text-align: left;
+    }
+
+
+
+}
+
+
+#map{
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
